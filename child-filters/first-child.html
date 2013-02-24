@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+    <script src="../jquery-1.8.3.js"></script>
+    
+    <!--
+    firstChild( ) returns Array<Element>
+        
+        Matches the first child of its parent.
+        While <a href='Selectors/first'>:first</a> matches only a single element, this matches more then one: One for each parent. 
+     -->
+    
+    <script type="text/javascript">
+        $(function() {
+        	  /* Finds the first span in each matched div to underline and add a hover state */
+        	  $("div span:first-child")
+        	       .css("background-color", "red")
+        	       .hover(function() {
+        	    	       $(this).css("text-decoration", "underline");
+        	    	       }, function() {
+        	    	    	   $(this).css("text-decoration", "none");
+							});
+		});
+	</script>
+</head>
+
+<body>
+	<div>
+		<span>John,</span> <span>Karl,</span> <span>Brandon</span>
+	</div>
+	<div>
+		<span>Glen,</span> <span>Tane,</span> <span>Ralph</span>
+	</div>
+</body>
+</html>

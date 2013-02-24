@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<script type="text/javascript" src="../jquery-1.8.3.js"></script>
+
+<!--
+descendant( Selector ancestor, Selector descendant ) returns Array<Element>
+
+Matches all descendant elements specified by "descendant" of elements specified by "ancestor".
+ -->
+
+<script type="text/javascript">
+	$(function() {
+		/* Finds all input descendants of forms */
+		$("form  input").css("background-color", "yellow");
+	});
+</script>
+</head>
+
+<body>
+	<form>
+		<div>Form is surrounded by the green outline</div>
+		<label>Child:</label> <input name="name" />
+
+		<fieldset>
+			<label>Grandchild:</label> <input name="newsletter" />
+		</fieldset>
+
+	</form>
+	Sibling to form:
+	<input name="none" />
+</body>
+</html>

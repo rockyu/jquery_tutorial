@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<script type="text/javascript" src="../jquery-1.8.3.js"></script>
+
+<!--
+not( Selector selector ) returns Array<Element>
+
+Filters out all elements matching the given selector. 
+ -->
+
+<script type="text/javascript">
+	$(function() {
+	    $("input:not(:checked) + span").css("background-color", "yellow");		
+	});
+</script>
+</head>
+
+<body>
+	<div>
+		<input type="checkbox" name="a" /> <span>Mary</span>
+	</div>
+
+	<div>
+		<input type="checkbox" name="b" /> <span>Paul</span>
+
+	</div>
+	<div>
+		<input type="checkbox" name="c" checked="checked" /> <span>Peter</span>
+	</div>
+
+</body>
+</html>

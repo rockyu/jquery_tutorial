@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<script type="text/javascript" src="jquery-1.8.3.js"></script>
+
+<!-- 
+parent( String expr ) returns jQuery
+
+Get a set of elements containing the unique parents of the matched set of elements.
+You may use an optional expression to filter the set of parent elements that will match. 
+ -->
+<script type="text/javascript">
+	$(function() {
+		$("p").parent().css("border", "3px solid red");
+		$("p").parent(".selected").css("background", "yellow");
+	});
+</script>
+</head>
+
+<body>
+	<div>
+		<p>Hello</p>
+	</div>
+	<div class="selected">
+		<p>Hello Again</p>
+	</div>
+</body>
+</html>

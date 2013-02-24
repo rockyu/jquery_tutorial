@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+    <style>
+        span {border: 1px solid red;}
+    </style>
+
+    <script src="../jquery-1.8.3.js"></script>
+    
+    <!--
+    nthChild( Number/String index ) returns Array<Element>
+        
+        Matches the nth-child of its parent or all its even or odd children.
+        While <a href='Selectors/eq'>:eq(index)</a> matches only a single element, this matches more then one: One for each parent with index. Multiple for each parent with even, odd, or equation.
+
+        The specified index is one-indexed, in contrast to :eq() which starts at zero. 
+     -->
+    
+    <script type="text/javascript">
+        $(function() {
+        	  /* Finds the second span in each matched div and notes it */
+        	  $("div span:nth-child(2)").append("(2nd child)");
+        	  
+        	  $("div span:nth-child(odd)").append(" (odd child)");
+		});
+	</script>
+</head>
+
+<body>
+	<div>
+		<span>John</span> <span>Karl</span> <span>Brandon</span>
+	</div>
+	<div>
+		<span>Glen</span> <span>Tane</span> <span>Ralph</span>
+	</div>
+</body>
+</html>

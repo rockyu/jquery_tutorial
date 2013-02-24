@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<script type="text/javascript" src="../jquery-1.8.3.js"></script>
+
+<!--
+next( Selector prev, Selector next ) returns Array<Element>
+
+Matches all next elements specified by "next" that are next to elements specified by "prev". 
+ -->
+
+<script type="text/javascript">
+	$(function() {
+		/* Finds all inputs that are next to a label */
+		$("label + input").css("background-color", "yellow");
+	});
+</script>
+</head>
+
+<body>
+	<form>
+		<label>Name:</label> <input name="name" />
+		<fieldset>
+			<label>Newsletter:</label> <input name="newsletter" />
+		</fieldset>
+		
+		<input name="none" />
+	</form>
+</body>
+</html>

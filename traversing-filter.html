@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <title></title>
+    <script type="text/javascript" src="jquery-1.8.3.js"></script>
+    
+    <script type="text/javascript">
+      $(function(){
+    	  $("div").css("background", "#c8ebcc") 
+	          .filter(".middle").css("border-color", "red").css("border-style", "solid"); 
+      });
+    </script>
+  </head>
+
+  <body>
+  	  <p>Change the color of all divs then put a border around only some of them.</p>
+	  <div>Nil</div> 
+	  <div class="middle">middle</div>
+	  <div class="middle">middle</div> 
+	  <div class="middle">middle</div> 
+	  <div class="middle">middle</div> 
+	  <div>Nil</div>
+
+  </body>
+</html>

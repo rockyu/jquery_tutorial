@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<script type="text/javascript" src="../jquery-1.8.3.js"></script>
+
+<!--
+child( Selector parent, Selector child ) returns Array<Element>
+
+Matches all child elements specified by "child" of elements specified by "parent". 
+ -->
+
+<script type="text/javascript">
+	$(function() {
+		/* Finds all children of the element with id "main" which is yellow. */
+		$("#main > *").css("border", "1px solid red");
+	});
+</script>
+</head>
+
+<body>
+	<span id="main">
+		<div></div>
+		<button>Child</button>
+		<div class="mini"></div>
+
+		<div>
+			<div class="mini"></div>
+			<div class="mini"></div>
+		</div>
+		<div>
+			<button>Grand</button>
+		</div>
+
+		<div>
+			<span>A Span <em>in</em> child
+			</span>
+		</div> 
+		
+		<span>A Span in main</span>
+	</span>
+</body>
+</html>

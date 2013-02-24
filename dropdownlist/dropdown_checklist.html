@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="ui.dropdownchecklist.css" />
+    
+    <script type="text/javascript" src="../jquery-1.8.3.js"></script>
+    <script type="text/javascript" src="../ui.core.js"></script>
+    <script type="text/javascript" src="ui.dropdownchecklist.js"></script>
+    
+    
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#s4").dropdownchecklist({ maxDropHeight: 120 });
+        });
+    </script>
+  </head>
+
+  <body>
+      <div id="content">
+
+       <p>
+       <select id="s4" multiple="multiple">
+            <option>Aries</option>
+            <option>Taurus</option>
+            <option disabled="disabled">Gemini</option>
+            <option disabled="disabled">Cancer</option>
+            <option>Leo	Leo</option>
+            <option>Virgo</option>
+            <option>Libra</option>
+            <option>Scorpius</option>
+            <option>Ophiuchus</option>
+            <option>Sagittarius</option>
+            <option>Capricornus</option>
+            <option>Aquarius</option>
+            <option>Pisces</option>
+        </select>
+        </p>
+        </div>
+  </body>
+</html>

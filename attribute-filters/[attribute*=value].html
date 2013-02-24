@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<script type="text/javascript" src="../jquery-1.8.3.js"></script>
+
+<!-- 
+attributeContains(String attribute, String value) returns Array<Element>
+
+    Matches elements that have the specified attribute and it contains a certain value. 
+-->
+
+<script type="text/javascript">
+	$(function() {
+		/* Finds all inputs that with a name attribute that contains 'man' and sets the value with some text. */
+		$("input[name*=man]").val("contains a man in it");
+		
+		$("input[name$=letter]").val("end with a letter");
+	});
+</script>
+</head>
+
+<body>
+	<input name="man-news" />
+	<input name="milkman" />
+	<input name="letterman2" />
+	<input name="newmilk" />
+
+	<input name="newsletter" /> 
+    <input name="milkman" /> 
+    <input name="jobletter" />
+</body>
+</html>

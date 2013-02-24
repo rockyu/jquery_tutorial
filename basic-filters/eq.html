@@ -1,0 +1,24 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <script type="text/javascript" src="../jquery-1.8.3.js"></script>
+    
+    <!-- 
+        eq( Number position ) returns jQuery
+        
+        Reduce the set of matched elements to a single element.
+        The position of the element in the set of matched elements starts at 0 and goes to length - 1. 
+    -->
+    
+    <script type="text/javascript">
+      $(function(){
+    	 $("p").eq(1).css('text-decoration', 'blink');
+      });
+    </script>
+  </head>
+
+  <body>
+  	  <p>This is just a test.</p>
+  	  <p>So is this</p>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<script type="text/javascript" src="jquery-1.8.3.js"></script>
+
+<!-- nextAll( String expr ) returns jQuery
+   
+    Find all sibling elements after the current element.
+    Use an optional expression to filter the matched set. 
+-->
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".master").click(function() {
+			$(this).nextAll(".slave").css("background", "yellow");
+		});
+	});
+</script>
+</head>
+
+<body>
+	<h2>Click on the master and the slave will respond</h2>
+
+	<p class="master">
+		<a href="#">Master 1</a>
+	</p>
+	<p class="slave">Hello 1 (c1)</p>
+	<p class="slave">Hello 2 (c1)</p>
+	<p class="slave">Hello 3 (c1)</p>
+	<br />
+	
+	<p class="master">
+		<a href="#">Master 2</a>
+	</p>
+	<p class=slave>Hello 3 (c1)</p>
+	<div>
+		<span>And Again</span>
+	</div>
+
+</body>
+</html>
