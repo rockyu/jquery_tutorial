@@ -1,14 +1,12 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
   <head>
-    <title></title>
     <script type="text/javascript" src="jquery-1.8.3.js"></script>
-    
     <script type="text/javascript">
       $(function(){
-		 $('div').each(function(i){
-			 $("span#console").append(i + ":" + $(this).html() + "  ");
-		});
+      	$('div').each(function(i){
+		$("span#console").append(i + ":" + $(this).html() + "  ");
+	});
       });
     </script>
   </head>
@@ -16,7 +14,6 @@
   <body>
   	<div>a</div>
 	<div>b</div>
-	
 	Printout: <span id="console"></span>
   </body>
 </html>
